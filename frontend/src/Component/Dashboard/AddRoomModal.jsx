@@ -25,7 +25,7 @@ const [error, setError] = useState("");
     setIsSubitting(true);
     setError("");
     try {
-    const response = await axios.post("http://localhost:3500/room/createNewRoom", newRoom);
+    const response = await axios.post("https://my-hostel-managent.vercel.app/room/createNewRoom", newRoom);
 
     onAddRoom(response.data);
     onClose();

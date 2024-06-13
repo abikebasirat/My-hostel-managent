@@ -38,7 +38,7 @@ return
 }
 
 axios
-.post("http://localhost:3500/student/register-student", formData)
+.post("https://my-hostel-managent.vercel.app/register-student", formData)
 .then((response) => {
 console.log(response);
   setIsSubmitting(false);

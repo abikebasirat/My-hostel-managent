@@ -22,7 +22,7 @@ const Header = () => {
 
   const logOutUser = async () => {
     try {
-      await axios.post("http://localhost:3500/admin/logout", null, {
+      await axios.post("https://my-hostel-managent.vercel.app/admin/logout", null, {
         withCredentials: true
       })
       setUser(null)

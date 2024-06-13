@@ -42,7 +42,7 @@ const Login = () => {
     }
     setIsSubmitting(true);
     axios
-    .post(`http://localhost:3500/admin/login`, formData)
+    .post(`https://my-hostel-managent.vercel.app/admin/login`, formData)
     .then((response) => {
       console.log(response.data);
       setUser(response.data);

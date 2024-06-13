@@ -11,7 +11,7 @@ const UpdateCheckIn = ({student, onClose}) => {
         const fetchRoomDetails = async() => {
             if(student.room){
                 try{
-                    const response = await axios.get(`http://localhost:3500/room/get-single-room/${student.room}`);
+                    const response = await axios.get(`https://my-hostel-managent.vercel.app/room/get-single-room/${student.room}`);
                     setCurrentRoomNumber(response.data.roomNumber)
                 } catch (error) {
                     console.error("Error feching room details", error);
@@ -34,7 +34,7 @@ const UpdateCheckIn = ({student, onClose}) => {
     
         try {
           const response = await axios.post(
-            `http://localhost:3500/student/check-in-status`,
+            `https://my-hostel-managent.vercel.app/student/check-in-status`,
             {
               action,
               roomNumber,
