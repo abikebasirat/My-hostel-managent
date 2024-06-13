@@ -25,7 +25,7 @@ app.use((req, res, next) => {
 
 app.use(
   cors({
-    origin: ["https://my-hostel-managent-qwbk.vercel.app/"],
+    origin: ["http://localhost:5173"],
     credentials: true,
     optionsSuccessStatus: 200,
     methods: "GET, POST, PUT, PATCH, DELETE, HEAD, OPTIONS",
